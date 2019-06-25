@@ -1,0 +1,30 @@
+.content {
+  width: 800px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  font-size: 90%;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.account {
+  background-color: #EFEFEF;
+  border-right: 1px solid white;
+  width: 50%;
+  padding-left: 10px;
+  padding-top: 25px;
+  cursor: pointer;
+}
+
+.available-cash {
+  background-color: #F7F7F7;
+  width: 50%;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}

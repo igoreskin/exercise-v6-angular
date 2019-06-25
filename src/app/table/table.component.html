@@ -1,0 +1,20 @@
+<div id="table">
+  <table>
+    <colgroup>
+      <col style="width: 50%">
+      <col style="width: 50%">
+    </colgroup>
+    <tbody *ngFor="let account of accounts">
+      <tr>
+        <td class="name">{{account.name}}</td>
+        <td *ngIf="account.change.includes('+')" class="cash"><span class="black">{{account.cash}}</span><br/>
+          <span [ngClass]="'colors green'">{{account.change}}</span></td>
+        <td *ngIf="account.change.includes('-')" class="cash"><span class="black">{{account.cash}}</span>
+          <br /><span [ngClass]="'colors red'">{{account.change}}</span></td>
+        <td *ngIf="!account.change.includes('+') && !account.change.includes('-')" class="cash"><span class="black">{{account.cash}}</span>
+          <br /><span [ngClass]="'colors no-change'">{{account.change}}</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="sort()">Sort</button>
+</div>

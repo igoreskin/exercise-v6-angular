@@ -1,0 +1,45 @@
+#table{
+  background-color: #FFFFFF;
+  width: 800px;
+}
+
+table {
+  width: 100%;
+}
+
+.name {
+  color: #0A71B0;
+  font-weight: bold;
+  padding-left: 10px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.cash {
+  text-align: right;
+  padding-right: 10px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+tr {
+  height: 60px;
+}
+
+.black {
+  font-weight: bold;
+}
+
+.colors {
+  font-size: 85%;
+}
+
+.red {
+  color: #FF3233;
+}
+
+.green {
+  color: #04A92C;
+}
+
+.no-change {
+  color: black;
+}
