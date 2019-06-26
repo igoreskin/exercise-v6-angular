@@ -6,6 +6,7 @@ import { AccountsService } from '../accounts.service';
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css']
 })
+
 export class TableComponent implements OnInit {
 
   accounts;
@@ -31,7 +32,7 @@ export class TableComponent implements OnInit {
 
   sortAcc() {
     this.accountsClicked++;
-    console.log(this.accountsClicked);
+    // console.log(this.accountsClicked);
     if (this.accountsClicked % 2 !== 0) {
       return this.accounts.sort((a, b) => a.name.replace(/[^0-9]/g, '') - b.name.replace(/[^0-9]/g, ''));
     } else {
@@ -41,7 +42,7 @@ export class TableComponent implements OnInit {
 
   sortCsh() {
     this.cashClicked++;
-    console.log(this.cashClicked);
+    // console.log(this.cashClicked);
     if (this.cashClicked % 2 !== 0) {
     return this.accounts.sort((a, b) => a.cash.replace(/[^0-9]/g, '') - b.cash.replace(/[^0-9]/g, ''))
     } else {
