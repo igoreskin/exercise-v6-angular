@@ -10,16 +10,23 @@ export class AccountsService {
 
   constructor(private http: HttpClient) { }
 
-  private callSource = new Subject<any>();
+  private callAccountSource = new Subject<any>();
+  private callCashSource = new Subject<any>();
 
-  componentMethodCalled$ = this.callSource.asObservable();
+  accountMethodCalled$ = this.callAccountSource.asObservable();
+
+  cashMethodCalled$ = this.callCashSource.asObservable()
 
   getAccounts() {
     return this.http.get('../assets/accounts.json');
   }
 
-  sortAscend() {
-    this.callSource.next();
+  sortAccounts() {
+    this.callAccountSource.next();
+  }
+
+  sortCash() {
+    this.callCashSource.next();
   }
 
 

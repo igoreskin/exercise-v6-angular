@@ -11,8 +11,12 @@ export class HeaderComponent implements OnInit {
 
   constructor(public accountsService: AccountsService) { }
 
-  sort() {
-    this.accountsService.sortAscend();
+  sortA() {
+    this.accountsService.sortAccounts();
+  }
+
+  sortC() {
+    this.accountsService.sortCash();
   }
 
   ngOnInit() {
