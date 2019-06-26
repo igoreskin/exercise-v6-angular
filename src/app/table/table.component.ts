@@ -36,6 +36,7 @@ export class TableComponent implements OnInit {
   loadMore() {
     this.accounts = this.data;
     this.showLoadMore = false;
+    console.log(this.accounts);
   }
 
   sortAcc() {
