@@ -11,8 +11,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(public accountsService: AccountsService) { }
 
-  sortAccounts() {
-    this.accountsService.clickButton()
+  sort() {
+    this.accountsService.sortAscend();
   }
 
   ngOnInit() {
