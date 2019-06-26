@@ -13,7 +13,7 @@ export class AccountsService {
   private callAccountSource = new Subject<any>();
   private callCashSource = new Subject<any>();
 
-  accountMethodCalled$ = this.callAccountSource.asObservable();
+  accountMethodCalled$ = this.callAccountSource.asObservable(); // this observable is subscribed to in table.component
 
   cashMethodCalled$ = this.callCashSource.asObservable()
 
@@ -21,6 +21,7 @@ export class AccountsService {
     return this.http.get('../assets/accounts.json');
   }
 
+  // This method is called from header.component: 
   sortAccounts() {
     this.callAccountSource.next();
   }

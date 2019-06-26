@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   sortA() {
     this.signC = '';
     this.aClicked++;
-    console.log(this.aClicked)
+    // console.log(this.aClicked);
     this.aClicked % 2 !== 0 ? this.signA = "^" : this.signA = "v"
     this.accountsService.sortAccounts();
   }
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
   sortC() {
     this.signA = '';
     this.cClicked++;
-    console.log(this.cClicked)
+    // console.log(this.cClicked);
     this.cClicked % 2 !== 0 ? this.signC = "^" : this.signC = "v"
     this.accountsService.sortCash();
   }

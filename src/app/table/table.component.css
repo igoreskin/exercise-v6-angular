@@ -20,8 +20,17 @@ table {
   border-bottom: 1px solid #EDEDED;
 }
 
-tr {
+tr, .more {
   height: 60px;
+}
+
+.more {
+  text-align: center;
+  line-height: 55px;
+  color: #0A71B0;
+  font-weight: bold;
+  font-size: 110%;
+  cursor: pointer;
 }
 
 .black {
@@ -42,4 +51,50 @@ tr {
 
 .no-change {
   color: black;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #table {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #table {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #table {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #table {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #table {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  #table {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 327px) {
+  #table {
+    width: 220px;
+  }
+  .name, .cash {
+    font-size: 90%;
+  }
 }

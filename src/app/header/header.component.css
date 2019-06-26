@@ -33,3 +33,49 @@
 .sign {
   color: #0369AD;
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .content {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .content {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .content {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .content {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 327px) {
+  .content {
+    width: 220px;
+  }
+  .header {
+    height: 80px;
+  }
+}
